@@ -1,1 +1,0 @@
-# ziniasjoti.github.io
