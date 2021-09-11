@@ -544,6 +544,8 @@ a:focus {
     position: relative;
     width: calc(100% - 90px);
     padding: 0 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .about .about-text h3 {
@@ -554,9 +556,10 @@ a:focus {
 }
 
 .about .about-text p {
-    margin: 0;
+    margin: 10;
     font-size: 15px;
     transition: 1s;
+    
 }
 
 .about .about-item:hover .about-text h3,
@@ -566,8 +569,29 @@ a:focus {
   
 @media (max-width: 991.98px) {
     .about .about-content {
-        padding: 45px 15px 0 15px;
+        padding: 45px 15px 0 25px;
     }
+    .about .about-icon {
+        margin-left: 15px;
+    }
+    .about .about-text h3,
+    .about .about-text p {
+        margin: 0;
+        font-size: 90%;
+    }
+    
+    .about .about-icon {
+    position: relative;
+    width: 40px;
+    min-height: 40px;
+    }
+    .about .about-icon i {
+        position: relative;
+        font-size: 15px;
+      
+    }
+
+    
 }
 
 
@@ -887,7 +911,7 @@ a:focus {
     color: #ffffff;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 800px) {
     .service .service-text h3 {
         font-size: 16px;
         margin-bottom: 5px;
@@ -906,7 +930,7 @@ a:focus {
 .education {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    padding: 45px 10 15px 10;
 }
 
 .education .education-item {
@@ -947,7 +971,7 @@ a:focus {
 .education .education-text {
     position: relative;
     width: calc(100% - 120px);
-    padding: 0 30px;
+    padding: 0 10px;
 }
 
 .education .education-text h3 {
@@ -962,6 +986,11 @@ a:focus {
     font-size: 16px;
     transition: 1s;
 }
+.education .education-text li {
+    margin: 0;
+    font-size: 16px;
+    transition: 1s;
+}
 
 .education .education-item:hover .education-text h3,
 .education .education-item:hover .education-text p,
@@ -970,13 +999,38 @@ a:focus {
 }
 
 @media (max-width: 800px) {
-    .education .education-text h3 {
-        font-size: 16px;
-        margin-bottom: 5px;
+    
+    .education .education-text {
+        position: relative;
+        width: calc(100% - 0px);
+        padding: 0 5px;
     }
     
-    .education .education-text p {
-        font-size: 14px;
+    .education .education-text h3,
+    .education .education-text p,
+    .education .education-text li {
+       font-size: 90%;
+       margin-bottom: 5px;
+    }
+    
+    .education .education-icon {
+    position: relative;
+    width: 50px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #EF233C;
+    background: #ffffff;
+    }
+    .education .education-icon i {
+    position: absolute;
+    font-size: 20px;
+    color: #EF233C;
+    transition: .3s;
+    }
+    .education .education-item:hover i {
+    font-size: 25px;
     }
 }
 
@@ -988,7 +1042,7 @@ a:focus {
 /*******************************/
 .portfolio {
     position: relative;
-    padding: 45px 0 15px 0;
+    padding: 80px 0 15px 0;
 }
 
 .portfolio #portfolio-filter {
@@ -1219,11 +1273,20 @@ a:focus {
     transition: 1s;
 }
 
-
 .expertise .section-header p {
     color: #414141;
     background: transparent;
     transition: 1s;
+    display: inline-block;
+    margin: 0 30px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #ffffff;
 }
 
 
@@ -1232,12 +1295,22 @@ a:focus {
     transition: 1s;
 }
 
+.expertise .expertise-text h5 {
+    font-size: 18px;
+    color: #ffffff;
+    transition: 1s;
+    font-weight: bold;
+}
 .expertise .expertise-text p {
     font-size: 18px;
     color: #ffffff;
     transition: 1s;
 }
-
+.expertise .expertise-text li {
+    font-size: 18px;
+    color: #ffffff;
+    transition: 1s;
+}
 
 .expertise .skill-name {
     margin-top: 15px;
@@ -1266,6 +1339,29 @@ a:focus {
     border-radius: 10px;
     transition: 2s;
 }
+.expertise .expertise-content{
+    padding: 0 60px;
+}
+@media (max-width: 991.98px) {
+    .experience .expertise-content {
+        padding: 45px 15px 0 15px;
+    }
+    .expertise {
+        position: relative;
+        width: 100%;
+        margin: 15px 0;
+        padding: 50px 0;
+       
+        background: #ffffff;
+    }
+    
+    .expertise .expertise-text h5,
+    .expertise .expertise-text p,
+    .expertise .expertise-text li{
+        color: #414141;
+        font-size: 90%;
+    }
+}
 
 /*******************************/
 /***********  Projects **********/
@@ -1291,6 +1387,8 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 0 30px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .project .project-text h3 {
